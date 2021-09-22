@@ -1,0 +1,22 @@
+[
+  {
+    "tarea": "estudiar",
+    "estado": "terminada"
+  },
+  {
+    "tarea": "viajar",
+    "estado": "pendiente"
+  },
+  {
+    "tarea": "trabajar",
+    "estado": "terminada"
+  },
+  {
+    "tarea": "listo",
+    "estado": "pendiente"
+  },
+  {
+    "tarea": "listo",
+    "estado": "pendiente"
+  }
+]
