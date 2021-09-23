@@ -6,9 +6,10 @@ bTareas = (n) => {
 
 tareasFunciones ={
     leer: metodoLeer = ()=> {
-        //console.log(`       `)
+        console.log(`
+                ~~~~~~~~~~~~~Listando tareas~~~~~~~~~~~~`)
         propiedad.forEach( (value, i, array) => 
-        // imprimir comentarios y hora de creacion 
+        // imprimir comentarios y hora de creacion 5 tab
         console.log(`${i}. ${propiedad[i].tarea} - ${propiedad[i].estado}`)); 
         console.log(`.....      ===>End<===`); console.log(`\n-----Tareas Leidas-----`)},
     // hacer funcion de imprimir 
@@ -34,7 +35,7 @@ tareasFunciones ={
 let propiedad = JSON.parse( fs.readFileSync(__dirname + "/tareas.json", "utf-8"));
 
 objetot ={
-    tarea: crea,
+    tarea: " ",
     estado: "pendiente"
     // poner comentarios a la tarea.
     // poner la fecha de creacion.
@@ -54,7 +55,7 @@ switch (n){
    
 
     case 'crear':
-        let crea = process.argv[3] // ingresar por consola el estado y nombre de la tarea
+       // let crea = process.argv[3] // ingresar por consola el estado y nombre de la tarea
         /*let escribirJSON = (arrayt) => {
             let arraytJSON = JSON.stringify(arrayt, null, 2);
             fs.writeFileSync("./tareas.json", arraytJSON, 'utf-8');
@@ -75,7 +76,8 @@ switch (n){
 
     tareasFunciones.guardarTareas(objetot)
        // guardarTareas(objetot)
-    return `\n------Tarea creada------`
+    console.log(`\n------Tarea creada------`);
+    break;
 
     case 'filtrar':
     
@@ -91,10 +93,11 @@ switch (n){
     break; 
 
     case undefined:
-    return '\nAtención - Tienes que pasar una acción';
+    console.log('\nAtención - Tienes que pasar una acción');
+    break; 
 
     default: 
-    return 'no entiendo que quieres hacer';
+    console.log('no entiendo que quieres hacer');
 }
 
 }

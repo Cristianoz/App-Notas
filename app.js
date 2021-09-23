@@ -6,13 +6,15 @@ const rl = readline.createInterface(process.stdin, process.stdout);
 
 const window =`
                 <=======================================>
-                              App de notas
+                              App de notas                  
                 <=======================================>\n
-                Escoge una de la siguientes opciones:\n
-                 1. Listar tareas
-                 2. Crear nuevas Tareas
-                 3. Filtrar tareas
-                 4. salir\n`;
+                ¿Que quieres hacer? :)\n
+                 1. Listar tareas.
+                 2. Crear nuevas Tareas.
+                 3. Filtrar tareas.
+                 4.
+                 5. salir.\n
+Opcion numero: `;
 
 mainScreen()
 function mainScreen(){
